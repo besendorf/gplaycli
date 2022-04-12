@@ -26,7 +26,7 @@ import argparse
 import requests
 import configparser
 
-from gpapi.googleplay import GooglePlayAPI, LoginError, RequestError
+from gpapi2.googleplay import GooglePlayAPI, LoginError, RequestError
 from google.protobuf.message import DecodeError
 from pkg_resources import get_distribution, DistributionNotFound
 from pyaxmlparser import APK
