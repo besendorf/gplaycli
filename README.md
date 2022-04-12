@@ -45,6 +45,11 @@ GPlayCli is a command line tool to search, install, update Android applications 
 
 Config
 ===========
+GPlayCli searches for the `gplaycli.conf` file in the following places and uses the first file it finds using this priority:
+- Current working directory
+- ~/.local/etc/gplaycli/
+- /usr/local/etc/gplaycli
+- /etc/gplaycli
 
 Login
 ===========
@@ -52,7 +57,7 @@ There are 2 ways of authenticating: token (default) or credentials.
 
 Token
 -----
-Gplaycli used to use a token from a token dispenser server located at https://matlink.fr/token/ to login in Google Play. Unfortunatly the server is not recheable and I don't what is needed for such a server so this does not work right now.
+GplayCli used to use a token from a token dispenser server located at https://matlink.fr/token/ to login in Google Play. Unfortunatly the server is not recheable and I don't what is needed for such a server so this does not work right now.
 
 Credentials
 -----------
