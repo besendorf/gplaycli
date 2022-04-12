@@ -1,5 +1,5 @@
-# gplaycli [![Python package](https://github.com/matlink/gplaycli/workflows/Python%20package/badge.svg)](https://github.com/matlink/gplaycli/actions) ![Debian package](https://github.com/matlink/gplaycli/workflows/Debian%20package/badge.svg)
-GPlayCli is a command line tool to search, install, update Android applications from the Google Play Store.
+<!--# gplaycli [![Python package](https://github.com/matlink/gplaycli/workflows/Python%20package/badge.svg)](https://github.com/matlink/gplaycli/actions) ![Debian package](https://github.com/matlink/gplaycli/workflows/Debian%20package/badge.svg)-->
+GPlayCli is a command line tool to search, install, update Android applications from the Google Play Store. This is a fork of the unmaintained [matlink/gplaycli](https://github.com/matlink/gplaycli)
 
 	$ usage: gplaycli [-h] [-V] [-v] [-s SEARCH] [-d AppID [AppID ...]] [-y] [-l FOLDER] [-P] [-av] [-a] [-F FILE]
                 [-u FOLDER] [-f FOLDER] [-dc DEVICE_CODENAME] [-t] [-tu TOKEN_URL] [-ts TOKEN_STR] [-g GSF_ID]
@@ -42,13 +42,17 @@ GPlayCli is a command line tool to search, install, update Android applications 
 	  -p, --progress        Prompt a progress bar while downloading packages
 	  -L, --log             Enable logging of apps status in separate logging files
 
+
+Config
+===========
+
 Login
 ===========
 There are 2 ways of authenticating: token (default) or credentials.
 
 Token
 -----
-By default, gplaycli fetches a token from a token dispenser server located at https://matlink.fr/token/ to login in Google Play. If you want to use another token dispenser server, change its URL in the configuration file (depends on the way you installed it). 
+Gplaycli used to use a token from a token dispenser server located at https://matlink.fr/token/ to login in Google Play. Unfortunatly the server is not recheable and I don't what is needed for such a server so this does not work right now.
 
 Credentials
 -----------
@@ -63,9 +67,11 @@ in the config file and type in your credentials in
 
 variables.
 
+Sometimes Google does not accept standard password login and you need to use [App Passwords](https://support.google.com/accounts/answer/185833). For this you need to activate [2-Step Verification](https://support.google.com/accounts/answer/185839)
+
 Changelog
 =========
-See https://github.com/matlink/gplaycli/releases for releases and changelogs
+See https://github.com/besendorf/gplaycli/releases for releases and changelogs
 
 Installation
 ============
@@ -76,4 +82,4 @@ Pip
 
 Debian installation
 --------------------
-Releases are available here https://github.com/matlink/gplaycli/releases/ as debian packages. Or click this link for automated builds ![Debian package](https://github.com/matlink/gplaycli/workflows/Debian%20package/badge.svg)
+Releases are available here https://github.com/besendorf/gplaycli/releases/ as debian packages. <!--Or click this link for automated builds ![Debian package](https://github.com/matlink/gplaycli/workflows/Debian%20package/badge.svg)-->
