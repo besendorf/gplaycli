@@ -1,3 +1,4 @@
+# gplacli2
 <!--# gplaycli [![Python package](https://github.com/matlink/gplaycli/workflows/Python%20package/badge.svg)](https://github.com/matlink/gplaycli/actions) ![Debian package](https://github.com/matlink/gplaycli/workflows/Debian%20package/badge.svg)-->
 GPlayCli is a command line tool to search, install, update Android applications from the Google Play Store. This is a fork of the unmaintained [matlink/gplaycli](https://github.com/matlink/gplaycli)
 
@@ -83,7 +84,7 @@ Installation
 
 Pip
 ---
-`python3 -m pip install gplaycli` or `python3 -m pip install gplaycli --user` if you are non-root (consider using `virtualenv`)
+`python3 -m pip install gplaycli2` or `python3 -m pip install gplaycli2 --user` if you are non-root (consider using `virtualenv`)
 
 Debian installation
 --------------------
